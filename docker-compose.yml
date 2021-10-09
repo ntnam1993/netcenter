@@ -1,0 +1,50 @@
+version: '3'
+
+services:
+  web:
+    build: ./web
+    ports:
+      - 80:80
+    command: apache2ctl -D FOREGROUND
+    volumes:
+      - .:/var/www/html
+      - ./web/sites:/etc/apache2/sites-enabled
+      - ${PATH_PEM_PRO}:/home/netcenter/.ssh/NetCenterSSHKey_Prod.pem
+      - ${PATH_PEM_STG}:/home/netcenter/.ssh/NetCenterSSHKey.pem
+      - ./web/init.sh:/init.sh
+      - ./web/logs/:/var/log/apache2
+    links:
+      - db_netcenter
+      - redis
+
+  db_netcenter:
+    image: postgres
+    restart: always
+    volumes:
+      - datastore:/var/lib/postgresql/data
+    environment:
+      POSTGRES_DB: netcenter
+      POSTGRES_USER: user
+      POSTGRES_PASSWORD: password
+
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+
+  redis:
+    image: redis
+
+  minio:
+    build: ./web/minio
+    ports:
+      - "${MINIO_PORT}:9000"
+    environment:
+      - MINIO_ACCESS_KEY=access
+      - MINIO_SECRET_KEY=secretkey
+    env_file: .env
+
+
+volumes:
+  datastore: {}

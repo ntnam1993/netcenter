@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --containerHeight: 580px;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        dl {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        dt {
+            float: left;
+        }
+        dd {
+            margin-left: 110px;
+        }
+        .container {
+            width: 820px;
+            height: var(--containerHeight);
+            background: #efefef;
+            padding: 15px;
+        }
+        .container p {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        table {
+            border-spacing: 15px;
+            background: white;
+        }
+        td.heading {
+            width: 100px;
+            background: #fdbfc1;
+            text-align: center;
+            font-weight: bold;
+        }
+        td.title {
+            text-align: center;
+        }
+        td.title-break-line {
+            text-align: center;
+            border: 1px solid;
+            width: 200px;
+            padding: 10px;
+        }
+        td.title-bold {
+            border: 1px solid;
+            text-align: center;
+            width: 300px;
+        }
+        .icon {
+            width: 200px;
+            border: 1px solid;
+            text-align: center;
+        }
+        .icon img {
+            width: 36px;
+            height: 36px;
+        }
+        .label {
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+        }
+        .val {
+            width: 200px;
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>主要項目のPV数、各遷移率の状況は下記の通りです。</p>
+    <dl>
+        <dt>基準値定義:</dt>
+        <dd>直近3ヶ月のエリア平均比（自社の数値／エリア全体の平均数値）を記載させていただいております</dd>
+    </dl>
+    <table>
+        <tbody>
+        <tr>
+            <td class="heading">PV/CV</td>
+            <td class="icon">基本TOP</td>
+            <td class="val">プラン</td>
+            <td class="val">フォト</td>
+            <td class="val">フェア一覧</td>
+            <td class="val">フェア詳細</td>
+            <td class="val">予約</td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">判定</td>
+            <td class="val" style="background-color: #efdedc">B</td>
+            <td class="val" style="background-color: #dfbab9">B+</td>
+            <td class="val" style="background-color: #dfbab9">B+</td>
+            <td class="val" style="background-color: #c4be9b">C+</td>
+            <td class="val" style="background-color: #efdedc">B</td>
+            <td class="val" style="background-color: #c4be9b">C+</td>
+        </tr>
+        <tr>
+            <td class="title-bold">エリア平均</td>
+            <td class="val">842.1</td>
+            <td class="val">114.7</td>
+            <td class="val">164.2</td>
+            <td class="val">438.7</td>
+            <td class="val">269.3</td>
+            <td class="val">5.9</td>
+        </tr>
+        <tr>
+            <td class="title-bold">自社実績</td>
+            <td class="val">583</td>
+            <td class="val">103</td>
+            <td class="val">153</td>
+            <td class="val">217</td>
+            <td class="val">207</td>
+            <td class="val">2</td>
+        </tr>
+
+        <tr>
+            <td class="heading">遷移率</td>
+            <td class="title-break-line" colspan="2">基本TOP＋プラン＋フォト➞フェア一覧</td>
+            <td class="title-break-line" colspan="2">フェア一覧➞フェア詳細</td>
+            <td class="title-break-line" colspan="2">フェア詳細　➞　予約</td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">評価</td>
+            <td class="icon" colspan="2"><img src="/var/www/html/public/images/umbrella.png" alt=""></td>
+            <td class="icon" colspan="2"><img src="/var/www/html/public/images/sun.png" alt=""></td>
+            <td class="icon" colspan="2"><img src="/var/www/html/public/images/umbrella.png" alt=""></td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">基準値</td>
+            <td class="val" colspan="2">69.2%</td>
+            <td class="val" colspan="2">119.6%</td>
+            <td class="val" colspan="2">147.2%</td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">現在値</td>
+            <td class="val" colspan="2">66.1%</td>
+            <td class="val" colspan="2">155.4%</td>
+            <td class="val" colspan="2">44.5%</td>
+        </tr>
+        <tr>
+            <td class="title-bold">エリア平均</td>
+            <td class="val" colspan="2">39.1%</td>
+            <td class="val" colspan="2">61.4%</td>
+            <td class="val" colspan="2">2.2%</td>
+        </tr>
+        <tr>
+            <td class="title-bold">自社実績</td>
+            <td class="val" colspan="2">25.9%</td>
+            <td class="val" colspan="2">95.4%</td>
+            <td class="val" colspan="2">1%</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>この結果から、基準達成に向けて下記のご提案をさせて頂きます。</p>
+</div>
+</body>
+</html>

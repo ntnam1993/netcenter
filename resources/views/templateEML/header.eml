@@ -1,0 +1,22 @@
+Subject: TEMPLATE_SUBJECT
+Cc: TEMPLATE_CC
+MIME-Version: 1.0
+Content-Type: multipart/mixed; boundary="------------C1DA9151DA2EB2E000D3A74F"
+X-Unsent: 1
+
+This is a multi-part message in MIME format.
+--------------C1DA9151DA2EB2E000D3A74F
+Content-Type: multipart/related; boundary="------------58835B1FEB36F0934FC8755E"
+
+--------------58835B1FEB36F0934FC8755E
+Content-Type: text/html; charset=utf-8
+Content-Transfer-Encoding: 8bit
+
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <p>TEMPLATE_BODY <br>
+    </p>

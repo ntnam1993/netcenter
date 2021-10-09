@@ -1,0 +1,165 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        :root {
+            --containerHeight: CONTAINER_HEIGHTpx;
+        }
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        dl {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        dt {
+            float: left;
+        }
+        dd {
+            margin-left: 110px;
+        }
+        .container {
+            width: 820px;
+            height: var(--containerHeight);
+            background: #efefef;
+            padding: 15px;
+        }
+        .container p {
+            margin-left: 1em;
+            margin-right: 1em;
+        }
+        table {
+            border-spacing: 15px;
+            background: white;
+        }
+        td.heading {
+            width: 100px;
+            background: #fdbfc1;
+            text-align: center;
+            font-weight: bold;
+        }
+        td.title {
+            text-align: center;
+        }
+        td.title-break-line {
+            text-align: center;
+            border: 1px solid;
+            width: 200px;
+            padding: 10px;
+        }
+        td.title-bold {
+            border: 1px solid;
+            text-align: center;
+            width: 300px;
+        }
+        .icon {
+            width: 200px;
+            border: 1px solid;
+            text-align: center;
+        }
+        .icon img {
+            width: 36px;
+            height: 36px;
+        }
+        .label {
+            width: 100px;
+            border: 1px solid;
+            text-align: center;
+        }
+        .val {
+            width: 200px;
+            border: 1px solid;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <p>主要項目のPV数、各遷移率の状況は下記の通りです。</p>
+    <dl>
+        <dt>基準値定義:</dt>
+        <dd>CRITERIA</dd>
+    </dl>
+    <table>
+        <tbody>
+        <tr>
+            <td class="heading">PV/CV</td>
+            <td class="icon">基本TOP</td>
+            <td class="val">プラン</td>
+            <td class="val">フォト</td>
+            <td class="val">フェア一覧</td>
+            <td class="val">フェア詳細</td>
+            <td class="val">予約</td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">判定</td>
+            RESULT0
+            RESULT1
+            RESULT2
+            RESULT3
+            RESULT4
+            RESULT5
+        </tr>
+        <tr>
+            <td class="title-bold">エリア平均</td>
+            <td class="val">VALUE10</td>
+            <td class="val">VALUE11</td>
+            <td class="val">VALUE12</td>
+            <td class="val">VALUE13</td>
+            <td class="val">VALUE14</td>
+            <td class="val">VALUE15</td>
+        </tr>
+        <tr>
+            <td class="title-bold">自社実績</td>
+            <td class="val">VALUE20</td>
+            <td class="val">VALUE21</td>
+            <td class="val">VALUE22</td>
+            <td class="val">VALUE23</td>
+            <td class="val">VALUE24</td>
+            <td class="val">VALUE25</td>
+        </tr>
+
+        <tr>
+            <td class="heading">遷移率</td>
+            <td class="title-break-line" colspan="2">基本TOP＋プラン＋フォト➞フェア一覧</td>
+            <td class="title-break-line" colspan="2">フェア一覧➞フェア詳細</td>
+            <td class="title-break-line" colspan="2">フェア詳細　➞　予約</td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">評価</td>
+            <td class="icon" colspan="2"><img src="ICON20" alt=""></td>
+            <td class="icon" colspan="2"><img src="ICON21" alt=""></td>
+            <td class="icon" colspan="2"><img src="ICON22" alt=""></td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">基準値</td>
+            <td class="val" colspan="2">STD0%</td>
+            <td class="val" colspan="2">STD1%</td>
+            <td class="val" colspan="2">STD2%</td>
+        </tr>
+        <tr>
+            <td class="title-bold" style="background-color: #fdf2d0">現在値</td>
+            <td class="val" colspan="2">CUR0%</td>
+            <td class="val" colspan="2">CUR1%</td>
+            <td class="val" colspan="2">CUR2%</td>
+        </tr>
+        <tr>
+            <td class="title-bold">エリア平均</td>
+            <td class="val" colspan="2">AVG0%</td>
+            <td class="val" colspan="2">AVG1%</td>
+            <td class="val" colspan="2">AVG2%</td>
+        </tr>
+        <tr>
+            <td class="title-bold">自社実績</td>
+            <td class="val" colspan="2">ACTUAL0%</td>
+            <td class="val" colspan="2">ACTUAL1%</td>
+            <td class="val" colspan="2">ACTUAL2%</td>
+        </tr>
+        </tbody>
+    </table>
+    <p>CONCLUSION</p>
+</div>
+</body>
+</html>
